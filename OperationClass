@@ -1,0 +1,23 @@
+public class OperationClass{
+    double fnum, snum, answer;
+    
+    public void add(){
+        answer = fnum + snum;
+        System.out.println(answer);
+    }
+    
+    public void subtract(){
+        answer = fnum - snum;
+        System.out.println(answer);
+    }
+    
+    public void division(){
+		answer = fnum / snum;
+        System.out.println(answer);
+    }
+    
+    public void multiply(){
+        answer = fnum * snum;
+        System.out.println(answer);
+    }
+}

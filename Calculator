@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Calculator{
+    public static void main(String[] args) {
+
+        OperationClass obj = new OperationClass();
+        Scanner input = new Scanner(System.in);
+
+        double userInput;
+        int operation;
+
+        System.out.print("Enter the first number: ");
+        userInput = input.nextDouble();
+        System.out.print("Enter the second number: ");
+        userInput = input.nextDouble();
+        System.out.println("Enter operation to be performed:");
+        operation = input.nextInt();
+
+        switch (operation){
+        case '+':
+            obj.add();
+            System.out.println();
+            break;
+        case '-':
+            obj.subtract();
+            break;
+        case '/':
+            obj.division();
+            break;
+        case '*':
+            obj.multiply();
+            break;
+        }
+    }
+}
